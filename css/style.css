@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.home {
+  background-color: #000;
+  padding-top: 30px;
+
+  & .logo {
+    width: 220px;
+    margin: auto;
+  }
+
+  & .container {
+    max-width: 1260px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .content {
+      width: 550px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      & h1 {
+        font-size: 48px;
+
+        & span {
+          color: #11b0c8;
+        }
+      }
+
+      & .description {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        & a {
+          width: 170px;
+          background-color: #11b0c8;
+          padding: 10px 20px;
+          font-size: 14px;
+          border-radius: 100px;
+          text-decoration: none;
+        }
+      }
+
+      & p:last-child {
+        color: #11b0c8;
+      }
+    }
+  }
+}
+
+.personagens {
+  max-width: 1260px;
+  margin: auto;
+  padding-top: 120px;
+
+  & h2 {
+    margin-bottom: 35px;
+  }
+
+  & .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+   
+
+    & .card {
+      background-color: #1A1A1A;
+      border: #8686866b 1px solid;
+      border-radius: 16px;
+      padding: 16px;
+      padding-bottom: 72px;
+
+      & header {
+        margin-bottom: 19px;
+        & img {
+          width: 262px;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 16px;
+          margin-bottom: 16px;
+        }
+      }
+
+      & .content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        & .status {
+          display: flex;
+          gap: 4px;
+        }
+      }
+    }
+  }
+}
+
+.carregar-mais {
+  width: 231px;
+  margin: auto;
+  margin-top: 71px;
+  margin-bottom: 79px;
+
+  & button {
+    width: 231px;
+    background-color: #11B0C8;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
